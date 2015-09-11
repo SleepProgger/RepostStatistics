@@ -1,0 +1,17 @@
+- Use the new imgur python module and remove all old and not needed stuff.
+
+- Remove all the not required stuff.
+
+- Put the imgur interaction in another thread with a queue so the rest can run while data is fetched/uploaded and vice versa.
+ 
+ - Use the logging module instead of my ugly one.
+   Also clean the log output a bit.
+ 
+ - Put the settings (how many sites to crawl) into the config file
+ 
+ - There is much room to make the sql statements faster. Esp. i think i have way to many indices which seriously bloat the db (atm. 500mb in my instance).
+   Also splitting the a/d/v hashes into an own table might lead to a better performance (use a foreign key to combine them with the image data).
+   
+ - Maybe use an mysql/maria whatever DB instead of sqlite for better performance due strict datatypes
+ 
+ - Put the border stuff (last crawled pages) into the config ?!

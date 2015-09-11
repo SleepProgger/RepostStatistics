@@ -1,0 +1,16 @@
+This code is written for python 2.7, and should not be used with 3.x, although it could be made portable. 
+
+#######################
+Required python modules:
+ - PIL or PILLOW(?)
+
+#######################
+Add hamming distance extension library to sqlite. (Extension info: https://www.sqlite.org/loadext.html)
+ Compile sqlite_extension/Sqlite3_Hamming.c
+ or use sqlite_extension/Sqlite3_Hamming.dll when on windows and using the x86 python version (is there even a 64 bit one ?).
+ 
+#######################
+Create config
+ - Request a new API key from imgur and put them into the config.json file.
+ - Run RepostStatistics.utils.UpdateToken to update your token and allow actions for your imgur account.
+  

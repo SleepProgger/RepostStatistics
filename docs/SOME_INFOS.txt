@@ -1,0 +1,11 @@
+############################
+BLACKLIST:
+Add userIDs to the blocked.txt / unblocked.txt files to blacklist/unblacklist imgur users.
+This files are both read , handled and cleaned at each startup.
+To get the imgurid use the imgur_finduserid_user.js with greasemonkey (firefox) or tampermonkey addon (chrome).
+The userid is visible on messages near the date.
+
+############################
+LOCK FILE:
+I use a lock file to avoid running twice at the same time. If the app crashes it might leave the lockfile and thus make starting impossible.
+In that case just remove the .lock file.
