@@ -7,7 +7,7 @@
 #include "sqlite3ext.h"
 SQLITE_EXTENSION_INIT1
 
-typedef UINT64 uint64_t;
+typedef sqlite3_int64 uint64_t;
 const uint64_t m1  = 0x5555555555555555; //binary: 0101...
 const uint64_t m2  = 0x3333333333333333; //binary: 00110011..
 const uint64_t m4  = 0x0f0f0f0f0f0f0f0f; //binary:  4 zeros,  4 ones ...
